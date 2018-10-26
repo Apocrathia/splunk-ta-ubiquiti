@@ -6,7 +6,7 @@ To use this TA with Enterprise Security some configuration is required. Datamode
 
 If you want to use this add-on on a single instance, with full CIM compatability follow these steps:
 
-[Download transforms.conf-single and rename to transforms.conf](transforms.conf-single.conf)
+[Download transforms.conf-single and rename to transforms.conf](transforms.conf-single)
 
 [Download props.conf-single and rename to props.conf](props.conf-single)
 
@@ -14,14 +14,14 @@ This file holds the configuration which rewrites the sourcetype based on a pater
 Place transforms.conf in the ta-ubiquiti/local directory.
 Place props.conf in the ta-ubiquiti/local directory.
 
-[Download and install the ubqt_indexes.tar](org_all_indexes.spl)
+[Download and install the ubnt_indexes.tar](org_all_indexes.spl)
 
 Restart splunk
 
 In the UI navigate to Settings -> Data Inputs
 Add a new input for UDP
 Enter the port which you would like to receive the data on
-Select any ubqt sourcetype ie ubqt:fw, change settings to your liking with the exception of indexes. Or manually create inputs.conf
+Select any ubnt sourcetype ie ubnt:fw, change settings to your liking with the exception of indexes. Or manually create inputs.conf
 ```
 [udp://8514]
 connection_host = ip 
